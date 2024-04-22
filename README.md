@@ -22,7 +22,7 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 ![1](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/1460b8b2-aad9-42cd-ac72-f825328d0f64)
 
 
-#Install and Configuration
+# Install and Configuration
 
 Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long as it's compatible with Node-Red and Mosquitto MQTT broker.
 
