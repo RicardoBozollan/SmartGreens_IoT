@@ -96,96 +96,96 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    const char* mqttPassword = "";
 
    #define SOIL_PIN 39
-#define LDR_PIN 36
-#define RELAY_PIN 23
+   #define LDR_PIN 36
+   #define RELAY_PIN 23
 
-WiFiClient espClient;
-PubSubClient client(espClient);
+   WiFiClient espClient;
+   PubSubClient client(espClient);
 
-bool wifiConnected = false;
+   bool wifiConnected = false;
 
-void setup() {
-  Serial.begin(9600);
-  connectToWiFi();
-  pinMode(RELAY_PIN, OUTPUT);
-  client.setServer(mqttServer, mqttPort);
-  client.setCallback(callback);
-}
+   void setup() {
+     Serial.begin(9600);
+     connectToWiFi();
+     pinMode(RELAY_PIN, OUTPUT);
+     client.setServer(mqttServer, mqttPort);
+     client.setCallback(callback);
+   }
 
-void loop() {
-  if (!wifiConnected) {
-    connectToWiFi();
-  } else {
-    if (!client.connected()) {
-      reconnect();
-    }
-    client.loop();
-    readSensors();
-  }
-  delay(1000);
-}
+   void loop() {
+     if (!wifiConnected) {
+       connectToWiFi();
+     } else {
+       if (!client.connected()) {
+         reconnect();
+       }
+       client.loop();
+       readSensors();
+     }
+     delay(1000);
+   }
 
-void readSensors() {
-  int soil = analogRead(SOIL_PIN);
-  int light = analogRead(LDR_PIN);
+   void readSensors() {
+     int soil = analogRead(SOIL_PIN);
+     int light = analogRead(LDR_PIN);
 
-  client.publish("soil_moisture", String(soil).c_str());
-  client.publish("light_level", String(light).c_str());
-}
+     client.publish("soil_moisture", String(soil).c_str());
+     client.publish("light_level", String(light).c_str());
+   }
 
-void connectToWiFi() {
-  Serial.println("Connecting to WiFi...");
-  WiFi.begin(ssid, password);
+   void connectToWiFi() {
+     Serial.println("Connecting to WiFi...");
+     WiFi.begin(ssid, password);
   
-  unsigned long startTime = millis();
-  while (WiFi.status() != WL_CONNECTED && millis() - startTime < 10000) {
-    delay(500);
-    Serial.print(".");
-  }
+     unsigned long startTime = millis();
+     while (WiFi.status() != WL_CONNECTED && millis() - startTime < 10000) {
+       delay(500);
+       Serial.print(".");
+     }
   
-  if (WiFi.status() == WL_CONNECTED) {
-    wifiConnected = true;
-    Serial.println("\nConnected to WiFi");
-    Serial.print("IP Address: ");
-    Serial.println(WiFi.localIP());
-    client.subscribe("pump_state"); // Subscribe to the pump_state topic
-  } else {
-    Serial.println("\nFailed to connect to WiFi");
-  }
-}
+     if (WiFi.status() == WL_CONNECTED) {
+       wifiConnected = true;
+       Serial.println("\nConnected to WiFi");
+       Serial.print("IP Address: ");
+       Serial.println(WiFi.localIP());
+       client.subscribe("pump_state"); // Subscribe to the pump_state topic
+     } else {
+       Serial.println("\nFailed to connect to WiFi");
+     }
+   }
 
-void reconnect() {
-  Serial.println("Attempting MQTT connection...");
-  if (client.connect("ESP32Client", mqttUser, mqttPassword )) {
-    Serial.println("Connected to MQTT broker");
-    client.subscribe("pump_state"); // Subscribe to the pump_state topic after reconnection
-  } else {
-    Serial.print("Failed to connect to MQTT broker, rc=");
-    Serial.print(client.state());
-    Serial.println(" try again in 5 seconds");
-    delay(5000);
-  }
-}
+   void reconnect() {
+     Serial.println("Attempting MQTT connection...");
+     if (client.connect("ESP32Client", mqttUser, mqttPassword )) {
+       Serial.println("Connected to MQTT broker");
+       client.subscribe("pump_state"); // Subscribe to the pump_state topic after reconnection
+     } else {
+       Serial.print("Failed to connect to MQTT broker, rc=");
+       Serial.print(client.state());
+       Serial.println(" try again in 5 seconds");
+       delay(5000);
+     }
+   }
 
-void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print("Message arrived [");
-  Serial.print(topic);
-  Serial.print("] ");
+   void callback(char* topic, byte* payload, unsigned int length) {
+     Serial.print("Message arrived [");
+     Serial.print(topic);
+     Serial.print("] ");
   
-  String message;
-  for (int i = 0; i < length; i++) {
-    message += (char)payload[i];
-  }
-  Serial.println(message);
+     String message;
+     for (int i = 0; i < length; i++) {
+       message += (char)payload[i];
+     }
+     Serial.println(message);
 
-  if (String(topic) == "pump_state") {
-    if (message == "true") {
-      digitalWrite(RELAY_PIN, HIGH); // Activate relay
-    } else {
-      digitalWrite(RELAY_PIN, LOW); // Deactivate relay
-    }
-  }
-}
+     if (String(topic) == "pump_state") {
+       if (message == "true") {
+         digitalWrite(RELAY_PIN, HIGH); // Activate relay
+       } else {
+         digitalWrite(RELAY_PIN, LOW); // Deactivate relay
+       }
+     }
+   }
    ```
 
 ## 4. Node-Red Configuration
