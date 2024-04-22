@@ -20,7 +20,7 @@ Connect the soil moisture sensor as shown in the following image.
 
 ![2](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/05e23f2b-5f3e-4bcf-8b75-c2c5c52b3be3)
 
-soil moisture sensor pinout:
+Soil moisture sensor pinout:
 
 | SOIL MOISTURE SENSOR | VCC | GND | D0 | A0 |
 |----------|----------|----------|----------|----------|
