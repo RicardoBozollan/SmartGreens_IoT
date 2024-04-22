@@ -26,7 +26,7 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 
 Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long as it's compatible with Node-Red and Mosquitto MQTT broker.
 
-1. Node-red   
+##1. Node-red   
    Firstly, Node-Red requires NodeJs, so it must be installed first. It can be installed via apt, with the following command:
    
    ```bash
@@ -51,7 +51,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    ```
    Now, Node-Red is installed and will run on startup.
    
-3. Mosquitto MQTT Broker
+##2. Mosquitto MQTT Broker
    To install Mosquitto, only one command is needed:
    
    ```bash
@@ -81,5 +81,5 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    ```
    After that, reboot your system and the broker is set up.
    
-5. ESP32 Configuration
-6. Node-Red Configuration
+##3. ESP32 Configuration
+##4. Node-Red Configuration
