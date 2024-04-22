@@ -84,7 +84,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 ## 3. ESP32 Configuration
    Ensure that the ESP32 has the PubSubClient library installed before uploading the code. The specific developed code for the ESP32 can be found here:
 
-   ```arduino
+   ```cpp
    #include <WiFi.h>
    #include <PubSubClient.h>
 
