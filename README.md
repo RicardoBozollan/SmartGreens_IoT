@@ -16,3 +16,6 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 5. Create a user-friendly interface for the user, allowing manual control of devices and providing insights into the garden's status and cultivation tips.
 
 6. Document the assembly and configuration process of the system, providing resources and instructions for others to replicate the project in their own gardens.
+
+
+![1](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/dee7f52d-b4d3-43aa-8b4f-968ce85f52d4)
