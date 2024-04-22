@@ -7,7 +7,7 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 # Objectives
 1. Develop a smart garden system based on ESP32 that is accessible and easy to assemble.
 
-2. Integrate soil moisture, air humidity, luminosity, and other sensors to monitor the environmental conditions of the garden.
+2. Integrate soil moisture, luminosity, and other sensors to monitor the environmental conditions of the garden.
 
 3. Implement actuators such as automated irrigation systems, light control, and ventilation to adjust the environmental conditions as necessary.
 
