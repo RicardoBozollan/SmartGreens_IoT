@@ -5,7 +5,6 @@
 - Single-board computer (SBC)
 - Light Dependent Resistor (LDR)
 - Resistor 10K ohms
-- Relay Module
 - Soil Moisture Sensor
 - 1 Channel Relay Module 12V
 
@@ -25,3 +24,14 @@ Soil moisture sensor pinout:
 | SOIL MOISTURE SENSOR | VCC | GND | D0 | A0 |
 |----------|----------|----------|----------|----------|
 | ESP32  | +3.3 V  | GND  |  -  |  VN  |
+
+
+
+### Assemble the ESP32 to LDR
+
+Connect the LDR with an resistor of 10K ohms to ESP32 as shown in the following image.
+![3](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/d9941e9d-90a3-469c-944e-2afaeb1a847a)
+
+### Assemble the ESP32 to the Relay Module
+
+Connect the 1 Channel Relay Module 12V to ESP32 as shown in the following image.
