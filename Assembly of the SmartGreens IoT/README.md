@@ -22,7 +22,6 @@ Connect the soil moisture sensor as shown in the following image.
 
 soil moisture sensor pinout:
 
-| Coluna 1 | Coluna 2 | Coluna 3 |
-|----------|----------|----------|
-| Valor 1  | Valor 2  | Valor 3  |
-| Valor 4  | Valor 5  | Valor 6  |
+| SOIL MOISTURE SENSOR | VCC | GND | D0 | A0 |
+|----------|----------|----------|----------|----------|
+| ESP32  | +3.3 V  | GND  |  -  |  VN  |
