@@ -4,7 +4,7 @@
 - ESP32
 - Single-board computer (SBC)
 - Light Dependent Resistor (LDR)
-- Resistor
+- Resistor 10K ohms
 - Relay Module
 - Soil Moisture Sensor
 - 1 Channel Relay Module 12V
