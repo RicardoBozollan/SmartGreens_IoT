@@ -43,3 +43,9 @@ Relay Module pinout:
 | 1 Channel Relay Module 12V | VCC | GND | IN |
 |----------|----------|----------|----------|
 | ESP32  | +3.3 V  | GND  |  D23  |
+
+
+### Circuit assembled
+
+The image below shows how the circuit should be assembled for the execution of this project.
+![CircuitoFinal](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/87141e78-44a6-46f1-ae9a-5d6cf30f8c17)
