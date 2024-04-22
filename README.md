@@ -189,6 +189,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    ```
 
 ## 4. Node-Red Configuration
+To create a Node-Red UI, the node-red-dashboard pallete was added. 
 The following Flow was created:
 ```json
 [
