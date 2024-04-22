@@ -19,4 +19,4 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 
 
 # MQTT Architecture Diagram
-![1](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/c4668114-259a-4df1-930c-495a3a4642c4)
+![1](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/1460b8b2-aad9-42cd-ac72-f825328d0f64)
