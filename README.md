@@ -51,7 +51,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    ```
    Now, Node-Red is installed and will run on startup.
    
-##2. Mosquitto MQTT Broker
+## 2. Mosquitto MQTT Broker
    To install Mosquitto, only one command is needed:
    
    ```bash
@@ -81,5 +81,5 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    ```
    After that, reboot your system and the broker is set up.
    
-##3. ESP32 Configuration
-##4. Node-Red Configuration
+## 3. ESP32 Configuration
+## 4. Node-Red Configuration
