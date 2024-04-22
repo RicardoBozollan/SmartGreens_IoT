@@ -41,5 +41,5 @@ Connect the 1 Channel Relay Module 12V to ESP32 as shown in the following image:
 Relay Module pinout:
 
 | 1 Channel Relay Module 12V | VCC | GND | IN |
-|----------|----------|----------|----------|----------|
+|----------|----------|----------|----------|
 | ESP32  | +3.3 V  | GND  |  D23  |
