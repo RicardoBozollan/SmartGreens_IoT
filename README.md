@@ -19,3 +19,4 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 
 
 # MQTT Architecture Diagram
+MQTT Architecture Diagram
