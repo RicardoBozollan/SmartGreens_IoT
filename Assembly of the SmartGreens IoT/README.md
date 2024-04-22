@@ -21,7 +21,8 @@ Connect the soil moisture sensor as shown in the following image.
 ![2](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/05e23f2b-5f3e-4bcf-8b75-c2c5c52b3be3)
 
 soil moisture sensor pinout:
-| Coluna 1 | Coluna 2 | Coluna 3 |  xxx  |   xxx  |
+
+| Coluna 1 | Coluna 2 | Coluna 3 |
 |----------|----------|----------|
-|  soil moisture sensor  | VCC  | GND |  D0  |  A0  |
-| ESP32  | +3.3 V  | GND  |  -  |  VN  |
+| Valor 1  | Valor 2  | Valor 3  |
+| Valor 4  | Valor 5  | Valor 6  |
