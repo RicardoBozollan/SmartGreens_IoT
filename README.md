@@ -28,13 +28,12 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
 1. Node-red   
    Firstly, Node-Red requires NodeJs, so it must be installed first. It can be installed via apt, with the following command:
-
+   
+   ```bash
    sudo apt update
-
    sudo apt install nodejs
-
    node -v
-
+   ```
    If everything worked, the node -v command should output the NodeJs version.
 
    Now, to install node-red, use the following command:
