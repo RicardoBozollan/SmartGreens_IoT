@@ -28,6 +28,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
 1. Node-red   
    Firstly, Node-Red requires NodeJs, so it must be installed first. It can be installed via apt, with the following command:
+
    sudo apt update
    sudo apt install nodejs
    node -v
@@ -47,7 +48,7 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    Now, Node-Red is installed and will run on startup.
    
-2. Mosquitto MQTT Broker
+3. Mosquitto MQTT Broker
    To install Mosquitto, only one command is needed:
 
    sudo apt install mosquitto mosquitto-clients
