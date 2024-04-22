@@ -88,9 +88,9 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    #include <WiFi.h>
    #include <PubSubClient.h>
 
-   const char* ssid = "SOKA_FUNDO_REP";
-   const char* password = "perguntapronelson";
-   const char* mqttServer = "192.168.15.160";
+   const char* ssid = "YOUR_WIFI_SSID";
+   const char* password = "YOUR_WIFI_PASSWD";
+   const char* mqttServer = "";
    const int mqttPort = 1883;
    const char* mqttUser = "";
    const char* mqttPassword = "";
