@@ -30,7 +30,9 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
    Firstly, Node-Red requires NodeJs, so it must be installed first. It can be installed via apt, with the following command:
 
    sudo apt update
+
    sudo apt install nodejs
+
    node -v
 
    If everything worked, the node -v command should output the NodeJs version.
@@ -39,12 +41,16 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    sudo npm install -g --unsafe-perm node-red
 
-   To eneble node-red on startup, use pm2, with the following commands:
+   To enable node-red on startup, use pm2, with the following commands:
 
    sudo npm install -g pm2
+   
    pm2 start /usr/bin/node-red -- -v
+   
    pm2 save
+   
    pm2 startup
+   
 
    Now, Node-Red is installed and will run on startup.
    
@@ -64,7 +70,8 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    Add these two lines in the file:
 
-   allow_anonymous true 
+   allow_anonymous true
+   
    listener 1883
 
    Now execute the following comand, to load the new changes:
@@ -73,5 +80,5 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    After that, reboot your system and the broker is set up.
    
-4. ESP32 Configuration
-5. Node-Red Configuration
+5. ESP32 Configuration
+6. Node-Red Configuration
