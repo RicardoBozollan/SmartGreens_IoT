@@ -38,45 +38,47 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    Now, to install node-red, use the following command:
 
+   ```bash
    sudo npm install -g --unsafe-perm node-red
-
+   ```
    To enable node-red on startup, use pm2, with the following commands:
 
+   ```bash
    sudo npm install -g pm2
-   
    pm2 start /usr/bin/node-red -- -v
-   
    pm2 save
-   
    pm2 startup
-   
-
+   ```
    Now, Node-Red is installed and will run on startup.
    
 3. Mosquitto MQTT Broker
    To install Mosquitto, only one command is needed:
-
+   
+   ```bash
    sudo apt install mosquitto mosquitto-clients
-
+   ```
    However, by default the newer versions of Mosquitto enable only localhost clients, so it's necessary to create a listner on port 1883 and allow anyonymous connections.
    To do the following, go to /etc/mosquitto directory:
-
-   cd /etc/mosquitto
-
-   Then, you're going to use a text editor, and edit some configurations on mosquitto.conf:
-
-   sudo nano mosquitto.conf
-
-   Add these two lines in the file:
-
-   allow_anonymous true
    
+   ```bash
+   cd /etc/mosquitto
+   ```
+   Then, you're going to use a text editor, and edit some configurations on mosquitto.conf:
+   
+   ```bash
+   sudo nano mosquitto.conf
+   ```
+   Add these two lines in the file:
+   
+   ```bash
+   allow_anonymous true
    listener 1883
+   ```
 
    Now execute the following comand, to load the new changes:
-
+   ```bash
    sudo mosquitto -v -c mosquitto.conf
-
+   ```
    After that, reboot your system and the broker is set up.
    
 5. ESP32 Configuration
