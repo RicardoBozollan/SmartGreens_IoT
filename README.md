@@ -52,7 +52,25 @@ Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long a
 
    sudo apt install mosquitto mosquitto-clients
 
-   However, by default the newer versions of Mosquitto enable only localhost, so its needed to  
+   However, by default the newer versions of Mosquitto enable only localhost clients, so it's necessary to create a listner on port 1883 and allow anyonymous connections.
+   To do the following, go to /etc/mosquitto directory:
+
+   cd /etc/mosquitto
+
+   Then, you're going to use a text editor, and edit some configurations on mosquitto.conf:
+
+   sudo nano mosquitto.conf
+
+   Add these two lines in the file:
+
+   allow_anonymous true 
+   listener 1883
+
+   Now execute the following comand, to load the new changes:
+
+   sudo mosquitto -v -c mosquitto.conf
+
+   After that, reboot your system and the broker is set up.
    
 4. ESP32 Configuration
 5. Node-Red Configuration
