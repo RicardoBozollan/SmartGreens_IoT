@@ -59,6 +59,7 @@ The image below shows how the circuit should be assembled for the execution of t
 # STEP 2:Node-RED Installation
 
 Any embedded linux system should work (Raspeberry Pi, Orange Pi, etc), as long as it's compatible with Node-Red and Mosquitto MQTT broker.
+For our version of this project, a TV BOX running Armbian was used.
    
    Firstly, Node-Red requires NodeJs, so it must be installed first. It can be installed via apt, with the following command:
    
@@ -664,4 +665,12 @@ The following Flow was created:
     }
 ]
 ```
+
+# References
+
+Installing NodeJs: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+
+Installing Node-Red: https://nodered.org/docs/getting-started/local
+
+Installing Mosquitto: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-debian-10
 
