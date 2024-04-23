@@ -18,7 +18,7 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 6. Document the assembly and configuration process of the system, providing resources and instructions for others to replicate the project in their own gardens.
 
 
-# MQTT Architecture Diagram
+# MQTT Architecture Diagram of the Project
 ![1](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/1460b8b2-aad9-42cd-ac72-f825328d0f64)
 
 
