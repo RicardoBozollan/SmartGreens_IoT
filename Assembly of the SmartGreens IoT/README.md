@@ -91,7 +91,7 @@ For our version of this project, a TV BOX running Armbian was used.
    ```bash
    sudo apt install mosquitto mosquitto-clients
    ```
-   However, by default the newer versions of Mosquitto enable only localhost clients, so it's necessary to create a listner on port 1883 and allow anyonymous connections.
+   However, by default the newer versions of Mosquitto enable only localhost clients, so it's necessary to create a listener on port 1883 and allow anyonymous connections.
    To do the following, go to /etc/mosquitto directory:
    
    ```bash
