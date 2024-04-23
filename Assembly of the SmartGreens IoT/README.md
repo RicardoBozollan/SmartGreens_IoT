@@ -1,3 +1,5 @@
+### This page will teach the assembly process of the project, from circuitry to the configurations for establishing MQTT communication.
+
 # STEP 1: Connect the sensors and relay to the ESP32.
 
 ### Note:
