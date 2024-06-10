@@ -3,15 +3,16 @@
 # STEP 1: Connect the sensors and relay to the ESP32.
 
 ### Note:
-In this project, a 1 Channel Relay Module 12V is used to simulate a water pump that would be used to irrigate the garden/plant.
+In this project, a 1 Channel Relay Module 12V is used to simulate a water pump that would be used to irrigate the garden/plant and a LED to simulate .
 
 ### Materials Needed:
 - ESP32
 - Single-board computer (SBC)
 - Light Dependent Resistor (LDR)
-- Resistor 10K ohms
+- 2 Resistors of 2.2K ohms
 - Soil Moisture Sensor
 - 1 Channel Relay Module 12V
+- 1 LED
 
  The image below shows the pinout of an ESP32.
 
