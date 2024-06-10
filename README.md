@@ -22,7 +22,7 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 ![imagem_2024-06-09_212249804](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/af7bbf0f-038b-4cbb-8d95-df345f8abe8a)
 
 # Sensors Architecture
-![imagem_2024-06-09_220652383](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/421c301d-5c1b-4f72-a485-cf961a8a2b05)
+![imagem_2024-06-09_220849119](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/2544e684-4caa-419c-9025-476330190925)
 
 # Version 1
 
