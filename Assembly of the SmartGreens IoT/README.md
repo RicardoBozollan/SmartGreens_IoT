@@ -217,7 +217,8 @@ For our version of this project, a TV BOX running Armbian was used.
 
   To add our MariaDB database as a data source, go to Configuration (gear icon) > Data Sources > Add data source, and select MySQL as the data source type.
   From there, you'll be prompted to configure the data source according to your MariaDB credentials.
-  You can find the developed dashboard JSON on the Grafana dashboard folder.
+  
+  You can find the developed dashboard JSON on the Grafana dashboard folder. Copy it and paste on the Grafana import tab, and you should be completely set up!
   
 
 # References
