@@ -180,6 +180,7 @@ For our version of this project, a TV BOX running Armbian was used.
    You should see sensor_data listed. Use ```EXIT()``` to go back from the MariaDB to the linux terminal.
 
    With this step done, your database is all set!
+   Remember to go to the MySql node in Node-Red and configure the connection accordingly.
 
 # References
 
