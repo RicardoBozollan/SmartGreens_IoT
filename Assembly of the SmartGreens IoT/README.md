@@ -36,6 +36,7 @@ Soil moisture sensor pinout:
 ### Assemble the ESP32 to LDR
 
 Connect the LDR with an resistor of 10K ohms to ESP32 as shown in the following image.
+
 ![imagem_2024-06-09_222346550](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/140221e2-0c48-4871-8cf3-e479d82d89d1)
 
 ### Assemble the ESP32 to the Relay Module
@@ -54,12 +55,14 @@ Relay Module pinout:
 ### Assemble the ESP32 to LED
 
 Connect the LED with an resistor of 2.2K ohms to ESP32 as shown in the following image.
+
 ![imagem_2024-06-09_225739075](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/a204bc88-426f-4a77-b51a-6c3ce464ee01)
 
 
 ### Circuit assembled
 
 The image below shows how the circuit should be assembled for the execution of this project.
+
 ![CircuitoFinal](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/87141e78-44a6-46f1-ae9a-5d6cf30f8c17)
 
 
