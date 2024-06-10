@@ -63,7 +63,7 @@ Connect the LED with an resistor of 2.2K ohms to ESP32 as shown in the following
 
 The image below shows how the circuit should be assembled for the execution of this project.
 
-![CircuitoFinal](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/87141e78-44a6-46f1-ae9a-5d6cf30f8c17)
+![imagem_2024-06-09_230537498](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/e9c5146c-112e-4244-930f-804483e10a55)
 
 
 # STEP 2:Node-RED Installation
