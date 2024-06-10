@@ -182,6 +182,44 @@ For our version of this project, a TV BOX running Armbian was used.
    With this step done, your database is all set!
    Remember to go to the MySql node in Node-Red and configure the connection accordingly.
 
+# STEP 7: Grafana Installation
+   Grafana is a great way of visualizing and keeping track of the data.
+   To install Grafana, firstly add the repository to your system:
+
+   ```bash
+   sudo apt update
+   sudo apt install -y software-properties-common
+   sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+   ```
+
+   Add the Grafana GPG key:
+
+   ```bash
+   wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+   ```
+
+  Update your package index and install Grafana:
+  
+  ```bash
+  sudo apt update
+  sudo apt install grafana
+  ```
+
+  Start and enable the Grafana service:
+
+  ```bash
+  sudo systemctl start grafana-server
+  sudo systemctl enable grafana-server
+  ```
+
+  Now, with Grafana enabled and running, it should be accessible at 'http://localhost:3000' in your web browser. the default credentials are admin/admin for usernam/password, 
+  and you'll be prompted to change the password.
+
+  To add our MariaDB database as a data source, go to Configuration (gear icon) > Data Sources > Add data source, and select MySQL as the data source type.
+  From there, you'll be prompted to configure the data source according to your MariaDB credentials.
+  You can find the developed dashboard JSON on the Grafana dashboard folder.
+  
+
 # References
 
 Installing NodeJs: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
