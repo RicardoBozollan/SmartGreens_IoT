@@ -131,7 +131,55 @@ For our version of this project, a TV BOX running Armbian was used.
    
 # STEP 5: Node-Red Configuration
 
-   To create a Node-Red UI, the node-red-dashboard palette was added. The created flow can be found in the Node-Red Flow folder.
+   To create a Node-Red UI, the node-red-dashboard and node-red-node-mysql palette was added. The created flow can be found in the Node-Red Flow folder.
+   
+# STEP 6: MariaDB Configuration
+   To have the history and actively track the environmental activities the plants are facing, the data being sent to node-red is going to be stored in a database. There are many options of open-source database applications, however, the operating system of the SBC needs to be compatible with the app. Many Database apps require a 64 bit system OS, such as InfluxDB.
+   However, since the loaded Armbian image in the repurposed TVBox is 32 bits, MariaDB was chosen given it's compatibility. It's install and configuration required the following steps:
+   
+   ```bash   
+   sudo apt update
+   sudo apt install mariadb-server
+   ```  
+   After installation, it's a good idea to run the security script to set a root password and remove insecure defaults:
+    
+   ```bash
+   sudo mysql_secure_installation
+   ```
+   Then, log into MariaDB and create a database and user for your Node-RED application:
+   
+   ```bash
+   sudo mysql -u root -p
+
+   CREATE DATABASE iot_data;
+   CREATE USER 'iot_user'@'localhost' IDENTIFIED BY 'password';
+   GRANT ALL PRIVILEGES ON iot_data.* TO 'iot_user'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+   Now, go back to MariaDB and create the sensor_data table:
+
+   ```bash
+   sudo mysql -u root -p
+
+   USE iot_data;
+
+   CREATE TABLE sensor_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    light_level FLOAT,
+    humidity FLOAT,
+    timestamp DATETIME
+   );
+   ```
+
+   Ensure the table was created successfully:
+   
+   ```bash
+   SHOW TABLES;
+   ```
+   You should see sensor_data listed. Use ```EXIT()``` to go back from the MariaDB to the linux terminal.
+
+   With this step done, your database is all set!
 
 # References
 
