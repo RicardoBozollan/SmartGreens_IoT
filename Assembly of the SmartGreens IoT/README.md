@@ -28,7 +28,7 @@ Soil moisture sensor pinout:
 
 | SOIL MOISTURE SENSOR | VCC | GND | D0 | A0 |
 |----------|----------|----------|----------|----------|
-| ESP32  | +3.3 V  | GND  |  -  |  VN  |
+| ESP32  | +3.3 V  | GND  |  -  |  D34  |
 
 
 
