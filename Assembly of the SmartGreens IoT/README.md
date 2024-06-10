@@ -35,7 +35,7 @@ Soil moisture sensor pinout:
 ### Assemble the ESP32 to LDR
 
 Connect the LDR with an resistor of 10K ohms to ESP32 as shown in the following image.
-![3](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/d9941e9d-90a3-469c-944e-2afaeb1a847a)
+![imagem_2024-06-09_222346550](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/140221e2-0c48-4871-8cf3-e479d82d89d1)
 
 ### Assemble the ESP32 to the Relay Module
 
