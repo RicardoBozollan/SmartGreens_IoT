@@ -54,7 +54,7 @@ Relay Module pinout:
 ### Assemble the ESP32 to LED
 
 Connect the LED with an resistor of 2.2K ohms to ESP32 as shown in the following image.
-![imagem_2024-06-09_225346950](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/52332e09-c635-40c5-a0d9-701006956ac8)
+![imagem_2024-06-09_225739075](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/a204bc88-426f-4a77-b51a-6c3ce464ee01)
 
 
 ### Circuit assembled
