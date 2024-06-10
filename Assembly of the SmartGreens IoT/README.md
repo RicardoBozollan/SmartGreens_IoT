@@ -22,7 +22,7 @@ In this project, a 1 Channel Relay Module 12V is used to simulate a water pump t
 
 Connect the soil moisture sensor as shown in the following image.
 
-![2](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/05e23f2b-5f3e-4bcf-8b75-c2c5c52b3be3)
+![imagem_2024-06-09_221257523](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/4d295f89-3269-40ce-ac98-683cf3f0cb86)
 
 Soil moisture sensor pinout:
 
