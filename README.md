@@ -14,8 +14,10 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 4. Establish MQTT communication to send sensor data to an online dashboard, allowing remote and real-time monitoring of the garden.
 
 5. Create a user-friendly interface for the user, allowing manual control of devices and providing insights into the garden's status and cultivation tips.
+   
+6. Track the environmental conditions with a database and have the data history displayed in a grafical interface. 
 
-6. Document the assembly and configuration process of the system, providing resources and instructions for others to replicate the project in their own gardens.
+8. Document the assembly and configuration process of the system, providing resources and instructions for others to replicate the project in their own gardens.
 
 
 # MQTT Architecture Diagram of the Project
