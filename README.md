@@ -28,5 +28,10 @@ The motivation behind the SmartGreens IoT project lies in the intention to facil
 
 # Version 1
 
-Youtube Video demonstrating the current state of the project.
+Youtube Video demonstrating the current state of the project (23/04/2024)
 https://youtu.be/NiiyKtn2b4Q?si=ZHjIS3LnLNSFCwQx
+
+# Version 2
+
+Youtube Video demonstrating the final state of the project.
+https://www.youtube.com/watch?v=y9-CgfOqilg
