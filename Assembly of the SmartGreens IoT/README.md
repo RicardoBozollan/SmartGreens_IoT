@@ -41,13 +41,13 @@ Connect the LDR with an resistor of 10K ohms to ESP32 as shown in the following 
 
 Connect the 1 Channel Relay Module 12V to ESP32 as shown in the following image:
 
-![5](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/6e3e6338-5d07-4f7c-81a4-1d46548bff2d)
+![imagem_2024-06-09_224215478](https://github.com/RicardoBozollan/SmartGreens_IoT/assets/163909522/63e6a988-79b4-48cc-a34e-a43c13aed2f4)
 
 Relay Module pinout:
 
 | 1 Channel Relay Module 12V | VCC | GND | IN |
 |----------|----------|----------|----------|
-| ESP32  | +3.3 V  | GND  |  D23  |
+| ESP32  | +3.3 V  | GND  |  D26  |
 
 
 ### Circuit assembled
