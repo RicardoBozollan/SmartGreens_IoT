@@ -212,7 +212,7 @@ For our version of this project, a TV BOX running Armbian was used.
   sudo systemctl enable grafana-server
   ```
 
-  Now, with Grafana enabled and running, it should be accessible at 'http://localhost:3000' in your web browser. the default credentials are admin/admin for usernam/password, 
+  Now, with Grafana enabled and running, it should be accessible at 'http://localhost:3000' in your web browser. the default credentials are admin/admin for username/password, 
   and you'll be prompted to change the password.
 
   To add our MariaDB database as a data source, go to Configuration (gear icon) > Data Sources > Add data source, and select MySQL as the data source type.
